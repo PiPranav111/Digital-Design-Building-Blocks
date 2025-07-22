@@ -5,7 +5,7 @@ This repository contains Verilog implementations of fundamental digital design b
 
 ## Included Modules
 
-- [JK Flip-Flop](./JK FlipFlop)  
+- [JK Flip-Flop](./JK_FlipFlop)  
 - [D Flip-Flop](./D_FlipFlop) *(coming soon)*   
 
 ## Learning Focus
