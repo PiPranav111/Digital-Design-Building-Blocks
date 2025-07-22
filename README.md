@@ -30,6 +30,6 @@ Feel free to explore each folder for detailed code, testbenches, simulation outp
 
 ## Contact
 
-*Your Name*  
-[LinkedIn Profile](https://linkedin.com/in/yourprofile)  
-your.email@example.com
+*Pranav Indurkar*  
+📌 [LinkedIn](https://linkedin.com/in/pranav-indurkar213)  
+📧 pranavindurkar111@gmail.com 
