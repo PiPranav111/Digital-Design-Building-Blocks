@@ -27,13 +27,14 @@ Testbench (`tb_jk.v`) is used to verify both models via **Vivado simulations**. 
 
 ### ✅ Behavioral Model – Waveform
 
-![Behavioral Waveform](outputs/waveform_beh.png)
+![Behavioral Waveform](sim/waveform.png)
 
 > **Interpretation**: Behavioral modeling captures abstract control logic, suitable for quick simulation but may not synthesize.
+> Minimal or incorrect synthesis result – highlights non-synthesizable constructs like `assign` to `reg`.
 
 ### ✅ RTL Model – Waveform
 
-![RTL Waveform](outputs/waveform_rtl.png)
+![RTL Waveform](sim/waveform.png)
 
 > **Interpretation**: RTL model aligns with clock-triggered flip-flop behavior, enabling accurate timing and synthesis.
 
@@ -41,17 +42,16 @@ Testbench (`tb_jk.v`) is used to verify both models via **Vivado simulations**. 
 
 ## 🧩 RTL Schematic Views
 
-### 🔬 Behavioral Schematic (from Vivado)
+### 🔬 RTL Schematic (from Vivado)
 
-![Behavioral Schematic](outputs/schematic_beh.png)
-
-> Minimal or incorrect synthesis result – highlights non-synthesizable constructs like `assign` to `reg`.
-
-### 🧮 RTL Schematic
-
-![RTL Schematic](outputs/schematic_rtl.png)
-
+![RTL Schematic](schematic/rtl_schematic.png)
 > Real flip-flop structure visible – confirms synthesis compatibility.
+
+
+### 🧮 Gate Level Schematic
+
+![Gate Level Schematic](schematic/synth_gatelevel_schematic.png)
+> Synthesized Gate Level schematic consisting of buffers, LUTs , reg etc.
 
 ---
 
@@ -102,5 +102,5 @@ If you **cannot represent it with gates or flip-flops**, it is *not synthesizabl
 
 I'm an aspiring VLSI engineer documenting my learning journey for deeper understanding and job readiness. Connect or give feedback!
 
-📌 [LinkedIn](https://linkedin.com/in/your-profile)  
-📧 your.email@example.com  
+📌 [LinkedIn](https://linkedin.com/in/pranav-indurkar213)  
+📧 pranavindurkar111@gmail.com  
