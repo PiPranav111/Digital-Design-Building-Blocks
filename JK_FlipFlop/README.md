@@ -82,39 +82,4 @@ Testbench (`tb_jk.v`) is used to verify both models via **Vivado simulations**. 
 **💡 Key Insight**:  
 If you **cannot represent it with gates or flip-flops**, it is *not synthesizable*. Behavioral constructs (like `assign` to a `reg`, or `deassign`) are simulation-only and **do not map to real hardware**. RTL modeling uses only `always` blocks and conditional logic – matching real hardware behavior.
 
----
-
-## 🔍 Tools Used
-
-- 🛠️ Vivado 2023.x
-- 🧪 Verilog Simulation
-- 📉 Timing-aware RTL Schematic
-- 💡 Synthesizability Analysis
-
----
-
-## 📌 Skills & Industry Alignment
-
-- ✅ Clarity on HDL modeling levels (Behavioral vs RTL)
-- ✅ Hands-on Vivado usage for simulation and synthesis
-- ✅ Awareness of hardware-mappable logic constructs
-- ✅ GitHub-based presentation for visibility and portfolio
-
----
-
-## 📁 Future Scope
-
-- 🔄 Extend with **D, T, and SR Flip-Flops**
-- 🧠 Add **state machines (FSMs)** using synthesizable RTL
-- 📈 Include **timing analysis reports** (Slack, setup/hold)
-- 📂 Build a **Modular Digital Blocks Library**
-
----
-
-## 📬 Connect With Me
-
-I'm an aspiring VLSI engineer documenting my learning journey for deeper understanding and job readiness. Connect or give feedback!
-
-📌 [LinkedIn](https://linkedin.com/in/pranav-indurkar213)  
-📧 pranavindurkar111@gmail.com  
 
