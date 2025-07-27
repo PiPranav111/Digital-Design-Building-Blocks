@@ -1,5 +1,18 @@
 # 🔁 JK Flip-Flop – Behavioral vs Synthesizable Verilog Design
 
+## 📚 Important Theory
+- The Popular, 7473 IC, which contains two JK flip-flops, is typically clocked on the falling edge of the clock signal.
+- Specifically, the 7473 is a negative-edge-triggered flip-flop. This means that the flip-flop latches the input data when the clock signal goes from a high voltage to a low voltage.
+- The J and K inputs must be stable for a certain setup time before the falling edge for predictable operation.
+- The 7473 is also a master-slave flip-flop. This means that the input data is first loaded into a "master" latch while the clock is high, and then transferred to the "slave" latch (which outputs the data) on the falling edge of the clock.
+- The original advantage of a J-K flip-flop is its high functionality combined with small package and low pin count.
+
+## 📚 Important Note regarding Behavioral modeling of JK Flipflop
+- Note that the asynchronous clear input is implemented such that once the clear is asserted, the output is forced low until the clear is deasserted. This eliminates the need to test the clear input on each clock cycle during the next always block, reducing the number of instructions that need to be executed each clock cycle. Anything that reduces instructions per clock cycle will speed up the simulation significantly. This works fine for behavioral code, and some synthesis tools can recognize this construct, but most don’t.
+## 📚 Important Note regarding RTL modeling of JK Flipflop
+- Note that the asynchronous clear signal is implemented such that even after the clear is asserted, the always block is evaluated on each falling clock edge. This increases the simulation time, but allows the synthesis tool to see that both falling edges of the clock and the clear cause immediate changes to the state of the hardware.There is a potential problem with simulating a synthesized, gate-level J-K flip-flop and many devices like it. The problem can cause undefined signals to propagate throughout the design.
+
+
 ## 📚 Description
 
 This project implements a **JK Flip-Flop** using two modeling styles in Verilog:
